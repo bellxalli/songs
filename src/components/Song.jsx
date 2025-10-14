@@ -2,8 +2,6 @@ import Ratings from "./Ratings"
 import GrammyStatus from "./GrammyWinner"
 
 export default function Song(props){
-console.log("isGrammyWinner prop:", props.isGrammyWinner);
-
     return(
         <div className="album-card">
             <h3> {props.title} </h3>
