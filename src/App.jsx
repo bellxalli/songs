@@ -7,14 +7,14 @@ import Songs from "./songData.json"
 function App() {
   const songElements = [];
 
-  Songs.songs.forEach((s, index) => {
+  Songs.forEach((s, index) => {
     songElements.push(<Song key={index} {...s}/>)
   })
 
   return (
   
     <div>
-      
+
       <Header />
       {songElements}
       <Footer />
