@@ -1,16 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Header from "./components/Header"
+import Footer from "./components/Footer"
+import Song from "./components/Song"
+import Songs from "./songData.json"
+
 
 function App() {
-  const [count, setCount] = useState(0)
+  const songElements = [];
+
+  Songs.songs.forEach((s, index) => {
+    songElements.push(<Song key={index} {...s}/>)
+  })
 
   return (
-    <>
-      <div>
-      </div>
-    </>
+  
+    <div>
+      
+      <Header />
+      {songElements}
+      <Footer />
+
+    </div>
+
   )
 }
 
