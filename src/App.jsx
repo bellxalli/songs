@@ -16,7 +16,9 @@ function App() {
     <div>
 
       <Header />
-      {songElements}
+      <div className="album-container">
+        {songElements}
+      </div>
       <Footer />
 
     </div>
