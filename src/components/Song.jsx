@@ -9,7 +9,7 @@ export default function Song(props){
             <h4> By {props.artist} </h4>
             <p> The album was released in {props.year}. </p>
             <GrammyStatus />
-            <Ratings />
+            <Ratings rating={props.rating} />
             <ul> {props.genres.map((s, index) => <li key={index}>{s}</li>)} </ul>
         </div>
     )
