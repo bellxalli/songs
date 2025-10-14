@@ -17,8 +17,11 @@ export default function Song(props){
 
 export function Link(){
 
+    if(props.link){
+
+            return <p> This album is a Grammy winner! </p>
+        }
 
 
 
-    
 }
